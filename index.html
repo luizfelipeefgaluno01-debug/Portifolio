@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luiz Felipe | Desenvolvedor Front-End</title>
+    <meta name="description" content="Portfólio de Luiz Felipe, desenvolvedor front-end. Projetos, stack e formas de contato.">
+    <meta name="author" content="Luiz Felipe">
+    <meta property="og:title" content="Luiz Felipe | Desenvolvedor Front-End">
+    <meta property="og:description" content="Portfólio de Luiz Felipe, desenvolvedor front-end. Projetos, stack e formas de contato.">
+    <meta property="og:type" content="website">
+
+    <!-- Ícone do navegador (aba) -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
+
+    <!-- Fontes: Space Grotesk (títulos) + DM Sans (texto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Bibliotecas de estilo -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Fundo decorativo -->
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="blob blob-1" aria-hidden="true"></div>
+    <div class="blob blob-2" aria-hidden="true"></div>
+
+    <!-- Menu flutuante -->
+    <header class="nav" id="nav">
+        <a class="brand" href="#sobre">Luiz Felipe</a>
+        <nav class="nav-links" id="navLinks" aria-label="Navegação principal">
+            <a href="#sobre" class="nav-link active">Sobre</a>
+            <a href="#projeto" class="nav-link">Projeto</a>
+            <a href="#contato" class="nav-link">Contato</a>
+            <a class="nav-cta" href="mailto:luizfelipecep@gmail.com">
+                <i class="ri-mail-send-line"></i> E-mail
+            </a>
+        </nav>
+        <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+            <i class="ri-menu-3-line"></i>
+        </button>
+    </header>
+
+    <main>
+        <!-- Sobre -->
+        <section id="sobre" class="sobre">
+            <div class="content-wrapper reveal">
+                <p class="greeting animate__animated animate__fadeInUp">Olá, eu sou</p>
+                <h1 class="name">Luiz Felipe</h1>
+                <h2 class="role">
+                    Desenvolvedor <span class="typed" id="typed"></span><span class="caret" aria-hidden="true"></span>
+                </h2>
+                <p class="bio">
+                    Construo interfaces claras, rápidas e agradáveis de usar. Cuido do layout,
+                    do responsivo e da experiência de quem usa — do primeiro rascunho no Figma
+                    até a página no ar.
+                </p>
+
+                <div class="cta">
+                    <a class="btn btn-primary" href="#contato">
+                        <i class="ri-chat-3-line"></i> Fale comigo
+                    </a>
+                    <a class="btn btn-ghost" href="#projeto">
+                        <i class="ri-play-line"></i> Ver projeto
+                    </a>
+                </div>
+
+                <div class="stack" data-aos="fade-up">
+                    <span><i class="ri-html5-line"></i> HTML</span>
+                    <span><i class="ri-css3-line"></i> CSS</span>
+                    <span><i class="ri-javascript-line"></i> JavaScript</span>
+                    <span><i class="ri-figma-line"></i> Figma</span>
+                    <span><i class="ri-github-line"></i> GitHub</span>
+                    <span><i class="ri-plug-line"></i> API</span>
+                </div>
+
+                <div class="stats" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat">
+                        <span class="num" data-count="10" data-suffix="+">0</span>
+                        <span class="label">projetos entregues</span>
+                    </div>
+                    <div class="stat">
+                        <span class="num" data-count="100" data-suffix="%">0</span>
+                        <span class="label">foco em responsivo</span>
+                    </div>
+                    <div class="stat">
+                        <span class="num" data-count="24" data-suffix="h">0</span>
+                        <span class="label">tempo de resposta</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-dot" aria-hidden="true"><span></span></div>
+        </section>
+
+        <!-- Projeto em destaque -->
+        <section id="projeto" class="projeto">
+            <div class="content-wrapper reveal">
+                <span class="tag" data-aos="fade-right">Projeto em destaque</span>
+                <h3 class="section-title" data-aos="fade-up">Sistema de TV | Guichê Hospitalar</h3>
+
+                <div class="project-card">
+                    <figure class="image-container" data-aos="zoom-in">
+                        <img src="guiche-hospitalar.png" alt="Tela do Sistema de Atendimento de Guichê Hospitalar" loading="lazy">
+                        <figcaption>
+                            <i class="ri-tv-2-line"></i> Tela do sistema em uso no guichê
+                        </figcaption>
+                    </figure>
+
+                    <div class="project-info" data-aos="fade-left">
+                        <p>
+                            Solução para tornar mais eficiente a comunicação entre pacientes,
+                            acompanhantes e a equipe de atendimento. As senhas são exibidas em
+                            telas instaladas nos guichês, trazendo organização, agilidade e
+                            conforto para quem espera.
+                        </p>
+
+                        <ul class="features">
+                            <li><i class="ri-notification-3-line"></i> Alerta sonoro a cada nova senha chamada</li>
+                            <li><i class="ri-history-line"></i> Histórico das senhas já atendidas</li>
+                            <li><i class="ri-eye-line"></i> Visualização em tela grande, legível de longe</li>
+                            <li><i class="ri-smartphone-line"></i> Layout que se adapta a celular e desktop</li>
+                        </ul>
+
+                        <div class="stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato" class="contato">
+            <div class="content-wrapper reveal">
+                <span class="tag" data-aos="fade-right">Entrar em contato</span>
+                <h3 class="section-title" data-aos="fade-up">Vamos trabalhar juntos?</h3>
+                <p class="lead" data-aos="fade-up">
+                    Escolha uma das formas abaixo para conversarmos sobre oportunidades ou projetos.
+                </p>
+
+                <div class="contact-cards">
+                    <a class="card" href="mailto:luizfelipecep@gmail.com" data-aos="fade-up" data-aos-delay="0">
+                        <i class="ri-mail-line"></i>
+                        <span class="card-title">E-mail</span>
+                        <span class="card-sub">luizfelipecep@gmail.com</span>
+                    </a>
+                    <a class="card" href="https://www.instagram.com/santosdevbr/" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="80">
+                        <i class="ri-instagram-line"></i>
+                        <span class="card-title">Instagram</span>
+                        <span class="card-sub">@santosdevbr</span>
+                    </a>
+                    <a class="card" href="https://github.com/" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="160">
+                        <i class="ri-github-fill"></i>
+                        <span class="card-title">GitHub</span>
+                        <span class="card-sub">Ver repositórios</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© <span id="year"></span> Luiz Felipe — Desenvolvedor Front-End</p>
+        <a href="#sobre" class="to-top"><i class="ri-arrow-up-line"></i> Voltar ao topo</a>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
